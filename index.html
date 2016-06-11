@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dotty</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+        <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    </head>
+    <body>
+        <div id="content">
+            <div id="header">
+                <nav class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Getting Started
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/lampepfl/dotty/wiki">
+                            Wiki
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            FAQ
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/lampepfl/dotty">
+                            <img id="github-logo" src="./images/github-logo.svg" />
+                        </a>
+                    </li>
+                </nav>
+            </div>
+
+            <div class="page red">
+<div class="scala-logo-container">
+<p><img src="./images/scala-logo.svg" alt="image" /></p>
+</div>
+<h1 id="dotty">Dotty</h1>
+<div class="centered-subtitle">
+<p>A next generation compiler for Scala</p>
+</div>
+<div class="scroll-down-container">
+    <i id="scroll-down-arrow" class="animated infinite pulse material-icons">
+        expand_more
+    </i>
+</div>
+</div>
+<div class="page white">
+<div class="centered">
+<h1 id="getting-started">Getting Started</h1>
+<p>Using Dotty to compile your project is now pretty simple. Create the following structure:</p>
+<pre class="sourceCode bordered"><code>.
+├── build.sbt
+├── project
+│   ├── build.properties
+│   └── plugins.sbt
+└── src</code></pre>
+<h2 id="build.sbt">build.sbt</h2>
+<pre class="sourceCode bordered"><code>name := &quot;application&quot;
+version := &quot;0.1&quot;
+enablePlugins(DottyPlugin)</code></pre>
+<h2 id="build.properties">build.properties</h2>
+<pre class="sourceCode bordered"><code>sbt.version=0.13.11</code></pre>
+<h2 id="plugins.sbt">plugins.sbt</h2>
+<pre class="sourceCode bordered"><code>addSbtPlugin(&quot;com.felixmulder&quot; % &quot;sbt-dotty&quot; % &quot;0.1&quot;)</code></pre>
+</div>
+</div>
+        </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+</html>
