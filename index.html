@@ -48,21 +48,24 @@
 <p>A next generation compiler for Scala</p>
 </div>
 <div class="scroll-down-container">
-    <i id="scroll-down-arrow" class="animated infinite pulse material-icons">
-        expand_more
-    </i>
+    <a href="#why-dotty">
+        <i id="scroll-down-arrow" class="animated infinite pulse material-icons">
+            expand_more
+        </i>
+    </a>
 </div>
 </div>
 <div class="page blue">
 <div class="centered questions">
-<h1 id="why-dotty">- Why Dotty?</h1>
+<h1 id="why-dotty">Why Dotty?</h1>
 <p>Dotty is a platform to try out new language concepts and compiler technologies for Scala. The focus is mainly on simplification. We remove extraneous syntax (e.g. no XML literals), and try to boil down Scala’s types into a smaller set of more fundamental constructors. The theory behind these constructors is researched in <a href="https://infoscience.epfl.ch/record/215280">DOT</a>, a calculus for dependent object types.</p>
-<h1 id="is-it-the-future-of-scala">- Is it the future of Scala?</h1>
+<h1 id="is-it-the-future-of-scala">Is it the future of Scala?</h1>
 <div class="centered-text">
 <p>Yes, it will be - eventually.</p>
 </div>
-<h1 id="whos-working-on-it">- Who’s working on it?</h1>
+<h1 id="whos-working-on-it">Who’s working on it?</h1>
 <div class="contributors">
+<div class="contributors-cell">
 <div class="contributor">
 <p><img src="./images/martin.jpg" alt="image" /></p>
 <p>Martin Odersky</p>
@@ -75,6 +78,8 @@
 <p><img src="./images/smarter.jpg" alt="image" /></p>
 <p>Guillaume Martres</p>
 </div>
+</div>
+<div class="contributors-cell">
 <div class="contributor">
 <p><img src="./images/fengyun.png" alt="image" /></p>
 <p>Liu Fengyun</p>
@@ -84,14 +89,15 @@
 <p>Felix Mulder</p>
 </div>
 </div>
+</div>
 <div class="centered-text">
 <p>And a long line of <a href="https://github.com/lampepfl/dotty/graphs/contributors">contributors!</a></p>
 </div>
-<h1 id="can-i-use-it">- Can I use it?</h1>
+<h1 id="can-i-use-it">Can I use it?</h1>
 <div class="centered-text">
 <p><a href="#getting-started">You can!</a> But it currently comes with no guarantees of stability and correctness.</p>
 </div>
-<h1 id="so-features">- So, features?</h1>
+<h1 id="so-features">So, features?</h1>
 <div class="centered-table">
 <table>
 <colgroup>
@@ -191,7 +197,7 @@
 </table>
 </div>
 <p>The complete list is available <a href="https://github.com/lampepfl/dotty#what-are-the-features-that-could-make-me-consider-trying-it">here</a>.</p>
-<h1 id="i-have-more-questions">- I have more questions!</h1>
+<h1 id="i-have-more-questions">I have more questions!</h1>
 <div class="centered-text">
 <p>That’s great! We have more details on the <a href="https://github.com/lampepfl/dotty/wiki">Github Wiki</a> and please join our <a href="https://gitter.im/lampepfl/dotty">Gitter channel</a>!</p>
 </div>
@@ -217,14 +223,10 @@ enablePlugins(DottyPlugin)</code></pre>
 <pre class="sourceCode bordered"><code>addSbtPlugin(&quot;com.felixmulder&quot; % &quot;sbt-dotty&quot; % &quot;0.1&quot;)</code></pre>
 </div>
 </div>
-<!-- some reveal effects -->
-<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
-<script>
-    window.sr = ScrollReveal();
-    sr.reveal(".scala-logo-container",  { duration: 2000, delay: 100, mobile: false });
-</script>
         </div>
     </body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
+    <script src="./js/index.js"></script>
 </html>
