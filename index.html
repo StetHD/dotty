@@ -2,9 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
         <title>Dotty</title>
+
         <link rel="icon" type="image/png" href="./images/favicon.png">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -13,32 +15,31 @@
     </head>
     <body>
         <div id="content">
-            <div id="header">
-                <nav class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#getting-started">
-                            Getting Started
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/lampepfl/dotty/wiki">
-                            Wiki
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#why-dotty">
-                            FAQ
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/lampepfl/dotty">
-                            <img id="github-logo" src="./images/github-logo.svg" />
-                        </a>
-                    </li>
-                </nav>
-            </div>
-
-            <div class="page red">
+            <div class="page red exactly-one-page">
+<div id="header">
+    <nav class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#getting-started">
+                Getting Started
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lampepfl/dotty/wiki">
+                Wiki
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#why-dotty">
+                FAQ
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lampepfl/dotty">
+                <img id="github-logo" src="./images/github-logo.svg" />
+            </a>
+        </li>
+    </nav>
+</div>
 <div class="scala-logo-container">
 <p><img src="./images/scala-logo.svg" alt="image" /></p>
 </div>
@@ -52,13 +53,16 @@
     </i>
 </div>
 </div>
-<div class="page blue larger-page">
+<div class="page blue">
 <div class="centered questions">
 <h1 id="why-dotty">- Why Dotty?</h1>
-<p>Dotty is a platform to try out new language concepts and compiler technologies for Scala. The focus is mainly on simplification. We remove extraneous syntax (e.g. no XML literals), and try to boil down Scala’s types into a smaller set of more fundamental constructors. The theory behind these constructors is researched in <a href="http://www.cs.uwm.edu/~boyland/fool2012/papers/fool2012_submission_3.pdf">DOT</a>, a calculus for dependent object types.</p>
+<p>Dotty is a platform to try out new language concepts and compiler technologies for Scala. The focus is mainly on simplification. We remove extraneous syntax (e.g. no XML literals), and try to boil down Scala’s types into a smaller set of more fundamental constructors. The theory behind these constructors is researched in <a href="https://infoscience.epfl.ch/record/215280">DOT</a>, a calculus for dependent object types.</p>
 <h1 id="is-it-the-future-of-scala">- Is it the future of Scala?</h1>
+<div class="centered-text">
 <p>Yes, it will be - eventually.</p>
+</div>
 <h1 id="whos-working-on-it">- Who’s working on it?</h1>
+<div class="contributors">
 <div class="contributor">
 <p><img src="./images/martin.jpg" alt="image" /></p>
 <p>Martin Odersky</p>
@@ -79,11 +83,14 @@
 <p><img src="./images/felix.jpeg" alt="image" /></p>
 <p>Felix Mulder</p>
 </div>
+</div>
 <div class="centered-text">
-<p>And a long line of <a href="https://github.com/lampepfl/dotty/graphs/contributors">contributors</a>!</p>
+<p>And a long line of <a href="https://github.com/lampepfl/dotty/graphs/contributors">contributors!</a></p>
 </div>
 <h1 id="can-i-use-it">- Can I use it?</h1>
+<div class="centered-text">
 <p><a href="#getting-started">You can!</a> But it currently comes with no guarantees of stability and correctness.</p>
+</div>
 <h1 id="so-features">- So, features?</h1>
 <div class="centered-table">
 <table>
@@ -185,11 +192,13 @@
 </div>
 <p>The complete list is available <a href="https://github.com/lampepfl/dotty#what-are-the-features-that-could-make-me-consider-trying-it">here</a>.</p>
 <h1 id="i-have-more-questions">- I have more questions!</h1>
+<div class="centered-text">
 <p>That’s great! We have more details on the <a href="https://github.com/lampepfl/dotty/wiki">Github Wiki</a> and please join our <a href="https://gitter.im/lampepfl/dotty">Gitter channel</a>!</p>
 </div>
 </div>
+</div>
 <div class="page white">
-<div class="centered">
+<div class="centered" style="padding-top: 32px">
 <h1 id="getting-started">Getting Started</h1>
 <p>Using Dotty to compile your project is now pretty simple. Create the following structure:</p>
 <pre class="sourceCode bordered"><code>.
@@ -212,8 +221,7 @@ enablePlugins(DottyPlugin)</code></pre>
 <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js"></script>
 <script>
     window.sr = ScrollReveal();
-    sr.reveal(".scala-logo-container",  { duration: 2000, delay: 100 });
-    sr.reveal(".contributor",  { duration: 500, delay: 100 });
+    sr.reveal(".scala-logo-container",  { duration: 2000, delay: 100, mobile: false });
 </script>
         </div>
     </body>
