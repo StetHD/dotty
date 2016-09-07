@@ -2,57 +2,251 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#de332e">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta property="og:image" content="http://dotty.epfl.ch/images/preview.png" />
+
         <title>Dotty</title>
+
+        <link rel="icon" type="image/png" href="./images/favicon.png">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="./css/animate.css" />
         <link rel="stylesheet" type="text/css" href="./css/default.css" />
+
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+        (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter37916575 = new Ya.Metrika({ id:37916575, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })
+        (document, window, "yandex_metrika_callbacks");
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/37916575" style="position:absolute; left:-9999px;" alt /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" defer></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous" defer></script>
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.1.4/scrollreveal.min.js" defer></script>
+        <script src="./js/index.js" defer></script>
     </head>
     <body>
         <div id="content">
-            <div id="header">
-                <nav class="nav nav-pills">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            Getting Started
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/lampepfl/dotty/wiki">
-                            Wiki
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            FAQ
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/lampepfl/dotty">
-                            <img id="github-logo" src="./images/github-logo.svg" />
-                        </a>
-                    </li>
-                </nav>
-            </div>
-
-            <div class="page red">
+            <div class="page red exactly-one-page">
+<div id="header">
+    <nav class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#why-dotty">
+                FAQ
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#getting-started">
+                Getting Started
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lampepfl/dotty/wiki">
+                Wiki
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://github.com/lampepfl/dotty">
+                <img id="github-logo" src="./images/github-logo.svg" />
+            </a>
+        </li>
+    </nav>
+</div>
 <div class="scala-logo-container">
 <p><img src="./images/scala-logo.svg" alt="image" /></p>
-</div>
-<h1 id="dotty">Dotty</h1>
 <div class="centered-subtitle">
+<h1 id="dotty">Dotty</h1>
 <p>A next generation compiler for Scala</p>
-</div>
-<div class="scroll-down-container">
+<a href="#why-dotty">
     <i id="scroll-down-arrow" class="animated infinite pulse material-icons">
         expand_more
     </i>
+</a>
+</div>
+</div>
+</div>
+<div class="page blue">
+<div class="centered questions">
+<h1 id="why-dotty">Why Dotty?</h1>
+<p>Dotty is a platform to try out new language concepts and compiler technologies for Scala. The focus is mainly on simplification. We remove extraneous syntax (e.g. no XML literals), and try to boil down Scala’s types into a smaller set of more fundamental constructors. The theory behind these constructors is researched in <a href="https://infoscience.epfl.ch/record/215280">DOT</a>, a calculus for dependent object types.</p>
+<h1 id="is-it-the-future-scala">Is it the future Scala?</h1>
+<div class="centered-text">
+<p>Yes, it will be - eventually.</p>
+</div>
+<h1 id="can-i-use-it">Can I use it?</h1>
+<div class="centered-text">
+<p><a href="#getting-started">You can!</a> But it currently comes with no guarantees of stability.</p>
+</div>
+<h1 id="is-there-scala-2-interop">Is there Scala 2 interop?</h1>
+<div class="centered-text">
+<p>Dotty currently interops with libraries compiled with Scala 2.11 - but not 2.12</p>
+</div>
+<h1 id="how-do-i-migrate-my-code-to-dotty">How do I migrate my code to Dotty?</h1>
+<p>An automated rewriting tool is planned for Dotty, more on this to come. Scala 2 sources can be compiled to some degree by issuing:</p>
+<pre class="sourceCode bright"><code>./bin/dotc -language:Scala2 file.scala</code></pre>
+<p>when compiling your program.</p>
+<h1 id="whos-working-on-it">Who’s working on it?</h1>
+<div class="contributors">
+<div class="contributors-cell">
+<div class="contributor">
+    <a href="http://github.com/odersky">
+        <img src="./images/martin.jpg">
+    </a>
+    Martin Odersky
+</div>
+
+<div class="contributor">
+    <a href="http://www.d-d.me">
+        <img src="./images/petrashko.png">
+    </a>
+    Dmitry Petrashko
+</div>
+
+<div class="contributor">
+    <a href="http://guillaume.martres.me/">
+        <img src="./images/smarter.jpg">
+    </a>
+    Guillaume Martres
+</div>
+</div>
+<div class="contributors-cell">
+<div class="contributor">
+    <a href="http://chaos-lab.com/">
+        <img src="./images/fengyun.png">
+    </a>
+    Liu Fengyun
+</div>
+
+<div class="contributor">
+    <a href="https://github.com/felixmulder">
+        <img src="./images/felix.jpeg">
+    </a>
+    Felix Mulder
+</div>
+</div>
+</div>
+<div class="centered-text">
+<p>And a long line of <a href="https://github.com/lampepfl/dotty/graphs/contributors">contributors!</a></p>
+</div>
+</div>
+</div>
+<div class="page teal">
+<div class="centered questions">
+<h1 id="so-features">So, features?</h1>
+<div class="centered-table">
+<table>
+<colgroup>
+<col width="82%" />
+<col width="17%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td>Union, intersection and <a href="http://docs.scala-lang.org/sips/pending/42.type.html">literal singleton types</a></td>
+<td>Implemented</td>
+</tr>
+<tr class="even">
+<td>Fast compilation (phase fusion)</td>
+<td>Implemented</td>
+</tr>
+<tr class="odd">
+<td><a href="http://docs.scala-lang.org/sips/pending/trait-parameters.html">Trait parameters</a></td>
+<td>Implemented</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/scala/scala.github.com/pull/491">@static methods and fields</a></td>
+<td>Implemented</td>
+</tr>
+<tr class="odd">
+<td>Improved REPL with colors</td>
+<td>Implemented</td>
+</tr>
+<tr class="even">
+<td>Sbt incremental build</td>
+<td>Implemented</td>
+</tr>
+<tr class="odd">
+<td>Non-blocking lazy vals</td>
+<td>Implemented</td>
+</tr>
+<tr class="even">
+<td>Option-less pattern matching (based on <a href="https://github.com/scala/scala/pull/2848">name-based patmat</a>)</td>
+<td>Implemented</td>
+</tr>
+<tr class="odd">
+<td>Function arity adaptation</td>
+<td>Implemented</td>
+</tr>
+<tr class="even">
+<td>Multiversal equality</td>
+<td>Implemented</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Non-boxed arrays of value classes</td>
+<td>In progress</td>
+</tr>
+<tr class="odd">
+<td>Working contravariant implicits</td>
+<td>In progress</td>
+</tr>
+<tr class="even">
+<td><a href="https://github.com/dotty-linker/dotty">Auto-Specialization</a></td>
+<td>In progress</td>
+</tr>
+<tr class="odd">
+<td><a href="https://github.com/dotty-linker/dotty">Whole program optimizer</a></td>
+<td>In progress</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>HList &amp; HMaps/Record types</td>
+<td>Considered</td>
+</tr>
+<tr class="even">
+<td>Implicit functions</td>
+<td>Considered</td>
+</tr>
+<tr class="odd">
+<td>Effects</td>
+<td>Considered</td>
+</tr>
+<tr class="even">
+<td>Auto-completion in repl</td>
+<td>Considered</td>
+</tr>
+<tr class="odd">
+<td>Spec Option-less pattern matching</td>
+<td>Considered</td>
+</tr>
+<tr class="even">
+<td>Exhaustivity checks in pattern matching</td>
+<td>Considered</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>The complete list is available <a href="https://github.com/lampepfl/dotty#what-are-the-features-that-could-make-me-consider-trying-it">here</a>.</p>
+<h1 id="talks-on-dotty">Talks on Dotty?</h1>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=WxyyJyB_Ssc">Compilers are Databases</a> by Martin Odersky (<a href="http://www.slideshare.net/Odersky/compilers-are-databases">slides</a>)</li>
+<li><a href="https://www.youtube.com/watch?v=aftdOFuVU1o">Exploring the future of Scala</a> by Dmitry Petrashko (<a href="https://d-d.me/scalaworld2015/#/">slides</a>)</li>
+</ul>
+<h1 id="i-have-more-questions">I have more questions!</h1>
+<div class="centered-text">
+<p>That’s great! We have more details on the <a href="https://github.com/lampepfl/dotty/wiki">Github Wiki</a> and please join our <a href="https://gitter.im/lampepfl/dotty">Gitter channel</a>!</p>
+</div>
 </div>
 </div>
 <div class="page white">
-<div class="centered">
+<div class="centered" style="padding-top: 32px">
 <h1 id="getting-started">Getting Started</h1>
 <p>Using Dotty to compile your project is now pretty simple. Create the following structure:</p>
 <pre class="sourceCode bordered"><code>.
@@ -68,11 +262,10 @@ enablePlugins(DottyPlugin)</code></pre>
 <h2 id="build.properties">build.properties</h2>
 <pre class="sourceCode bordered"><code>sbt.version=0.13.11</code></pre>
 <h2 id="plugins.sbt">plugins.sbt</h2>
-<pre class="sourceCode bordered"><code>addSbtPlugin(&quot;com.felixmulder&quot; % &quot;sbt-dotty&quot; % &quot;0.1&quot;)</code></pre>
+<pre class="sourceCode bordered"><code>addSbtPlugin(&quot;com.felixmulder&quot; % &quot;sbt-dotty&quot; % &quot;0.1.2&quot;)</code></pre>
+<p>This plugin is based on the <a href="https://github.com/smarter/dotty-example-project">dotty-example-project</a>, but let’s you skip building dotty from scratch.</p>
 </div>
 </div>
         </div>
     </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 </html>
